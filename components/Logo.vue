@@ -1,5 +1,5 @@
 <template>
-  <div class="grid body_logo">
+  <div class="grid">
     <vs-row justify="center" align="center">
       <div class="logo_svg">
         <SvgLogoBlack class="noir_logo" />
@@ -24,33 +24,60 @@ export default {};
 
 
 <style lang="scss" scoped>
-.body_logo{
-  padding: 15px 0 5px 0;
-}
+@keyframes bounce-down {
+  0% {
+    transform: rotate(5deg) skew(-20deg, 1deg) translateY(-5px);
+    color: #2b00d4;
+  }
+  50% {
+    color: #eb4182;
 
+    transform: rotate(5deg) skew(-20deg, 1deg) translateY(-3px);
+  }
+  100% {
+    color: #2b00d4;
+    transform: rotate(5deg) skew(-20deg, 1deg) translateY(-5px);
+  }
+}
+@keyframes bounce-up {
+  0% {
+    transform: skew(20deg, 9deg) translateY(2px) rotate(-5deg);
+    color: #2b00d4;
+  }
+  50% {
+    color: #eb4182;
+
+    transform: skew(20deg, 9deg) translateY(0px) rotate(-5deg);
+  }
+  100% {
+    transform: skew(20deg, 9deg) translateY(2px) rotate(-5deg);
+    color: #2b00d4;
+  }
+}
 .logo_text {
   h2 {
-       color: #2b00d4;
+    color: #2b00d4;
 
-    font-family: Cairo ;
+    font-family: Cairo;
     padding: 0;
     margin: 0;
     font-size: 22px;
     line-height: 23px;
-    transition: 250ms ease-in-out;
+    transition: 300ms ease-in-out;
     cursor: default;
   }
   &:hover {
     #pnf {
-    
-      transform: rotate(-10deg) skew(20deg) translateY(-5px);
+      transform: rotate(5deg) skew(-20deg, 1deg) translateY(-5px);
       font-size: 20px;
+      animation: bounce-down 1s infinite;
+      animation-delay: 400ms;
     }
     #team {
-      
-
-      transform: skew(10deg, 10deg) translateY(2px);
-      font-size: 24px;
+      transform: skew(20deg, 9deg) translateY(2px) rotate(-5deg);
+      // font-size: 24px;
+      animation: bounce-up 1s infinite;
+      animation-delay: 400ms;
     }
   }
 }
@@ -62,27 +89,39 @@ export default {};
     top: 0;
     left: 0;
     position: absolute;
-    transition: 300ms ease-out;
-    transform: scale(0) rotate(180deg);
+    transition: 400ms ease-out;
+    transform: scale(0) rotate(90deg);
   }
   .noir_logo {
-    transition: 300ms;
+    transition: 400ms ease-out;
   }
-
+  @keyframes blink {
+    0% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg);
+      opacity: 0.7;
+    }
+    100% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  }
   &:hover {
     .noir_logo {
-      transform: scale(0) rotate(180deg);
+      transform: scale(0) rotate(90deg);
     }
     .color_logo {
       transform: scale(1);
+      animation: blink 1s infinite;
+      animation-delay: 450ms;
     }
   }
 }
 </style>
 
 <script>
-
-export default {
-  
-}
+export default {};
 </script>

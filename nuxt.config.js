@@ -19,6 +19,7 @@ export default {
   css: [
     'vuesax/dist/vuesax.css',
     '@/assets/scss/font-setup.scss',
+    '@/assets/scss/main.scss',
    
   ],
 
