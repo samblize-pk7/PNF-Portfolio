@@ -65,7 +65,7 @@
         <div class="divider">|</div>
         <div
           class="navigator_item"
-          :class="{ active : pNavActive == 'design' }"
+          :class="{ active: pNavActive == 'design' }"
           @click="projectNavToggle($event)"
           id="design"
         >
@@ -73,24 +73,253 @@
           <a>طراحی</a>
         </div>
       </div>
+      <div class="w-max-1200 proj-body">
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-1.png" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-2.gif" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-3.gif" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-4.gif" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-5.jpg" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-6.png" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-1.png" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-2.gif" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+        <vs-card type="2" style="margin: 20px">
+          <template #title>
+            <h3>Pot with a plant</h3>
+          </template>
+          <template #img>
+            <img src="/projects/p-5.jpg" alt="project" />
+          </template>
+          <template #text>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </template>
+          <template #interactions>
+            <vs-button danger icon>
+              <i class="bx bx-heart"></i>
+            </vs-button>
+            <vs-button class="btn-chat" shadow primary>
+              <i class="bx bx-chat"></i>
+              <span class="span"> 54 </span>
+            </vs-button>
+          </template>
+        </vs-card>
+      </div>
+    </section>
+    <section class="team_section">
+      <div class="cliped">
+        <h1 class="title">تیم ما</h1>
+        <div class="team-flex">
+          <div class="teammate">
+            <div class="card">
+              <div class="image">
+                <img src="/team/boy.png" alt="team" />
+                <div class="card-hover-box">
+                  <fa :icon="['fab', 'google']" />
+
+                  <fa :icon="['fas', 'anchor']" />
+                </div>
+              </div>
+              <div class="box">
+                <h1>سجاد علیزاده</h1>
+                <h2>senior Front-end And Application developer</h2>
+              </div>
+            </div>
+            <div class="description"></div>
+          </div>
+          <div class="space"></div>
+          <div class="teammate">
+            <div class="card">
+              <img src="/team/boy.png" alt="team" />
+              <div class="box">
+                <h1>حسین زارع</h1>
+                <h2>senior Back-End developer</h2>
+              </div>
+            </div>
+            <div class="description"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <section class="footer_section">
+      <div class="content">
+        <h1 style="font-sixe: 45px; padding: 50px; text-align: center">
+          THE FOOTER SECTION
+        </h1>
+      </div>
     </section>
   </div>
 </template>
 
+
+
+
 <script>
 import { Features } from "~/mock/constent_db";
+
 export default {
   data: () => ({
     const_data: {
       Features,
       // this is for project section
     },
-      pNavActive: 'design',
+    pNavActive: "design",
   }),
   methods: {
     // this is for project section
     projectNavToggle(event) {
-       this.pNavActive = event.currentTarget.id;
+      this.pNavActive = event.currentTarget.id;
     },
   },
 };
@@ -257,6 +486,94 @@ export default {
         color: #fff;
       }
     }
+  }
+}
+.proj-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 0 100px 0;
+}
+.team_section {
+  background: rgb(238, 248, 248);
+  .cliped {
+    clip-path: polygon(16% 80px, 100% 0, 100% 100%, 0 100%, 0 0);
+    background: #21cec2;
+    width: 100%;
+
+    .title {
+      text-align: center;
+      padding-top: 80px;
+      font-size: 35px;
+      color: rgb(44, 48, 53);
+    }
+
+    .team-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 20px;
+      .teammate {
+        background-color: #d4e0e2;
+        transition: 300ms;
+        border-radius: 9px;
+
+        .card {
+          .image {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+
+            .card-hover-box {
+              position: absolute;
+              background-color: rgba(10, 11, 14, 0.815);
+              border-radius: 9px 9px 0 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              svg {
+                color: rgb(81, 199, 179);
+                width: 80px;
+              }
+            }
+          }
+          .box {
+            background-color: rgb(10, 17, 16);
+            padding: 15px 10px;
+            border-radius: 0 0 4px 4px;
+            h1 {
+              font-size: 22px;
+              color: white;
+              text-align: center;
+            }
+            h2 {
+              color: white;
+              font-size: 16px;
+              text-align: center;
+              font-family: Cairo;
+            }
+          }
+        }
+      }
+      .space {
+        width: 10px;
+        background: #0620261c;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.footer_section {
+  background: #062026;
+  width: 100%;
+  .content {
+    max-width: 1200px;
+    padding: 50px 20px;
+    color: #d1e2e0;
+    margin: auto;
   }
 }
 </style>
